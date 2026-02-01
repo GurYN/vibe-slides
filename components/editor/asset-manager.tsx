@@ -3,7 +3,7 @@
 import { useState } from "react";
 import {
   FolderOpen,
-  Image,
+  Image as ImageIcon,
   FileText,
   Type,
   Search,
@@ -36,7 +36,7 @@ const CATEGORIES: {
   icon: React.ElementType;
 }[] = [
   { key: "all", label: "All", icon: FolderOpen },
-  { key: "images", label: "Images", icon: Image },
+  { key: "images", label: "Images", icon: ImageIcon },
   { key: "fonts", label: "Fonts", icon: Type },
   { key: "references", label: "Docs", icon: FileText },
 ];
@@ -186,6 +186,7 @@ function AssetItem({
   return (
     <div className="group relative aspect-square rounded-lg border bg-muted/50 overflow-hidden">
       {isImage && asset.thumbnail ? (
+        /* eslint-disable-next-line @next/next/no-img-element */
         <img
           src={`/api/projects/${asset.projectId}/assets/${asset.id}/thumbnail`}
           alt={asset.filename}
@@ -194,7 +195,7 @@ function AssetItem({
       ) : (
         <div className="flex items-center justify-center h-full">
           {isImage ? (
-            <Image className="h-8 w-8 text-muted-foreground" />
+            <ImageIcon className="h-8 w-8 text-muted-foreground" />
           ) : asset.mimeType.includes("font") ? (
             <Type className="h-8 w-8 text-muted-foreground" />
           ) : (

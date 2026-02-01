@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Image from "next/image";
 import { RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProjectGrid } from "@/components/dashboard/project-grid";
@@ -75,7 +76,7 @@ export default function DashboardPage() {
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.png" alt="Vibe Slides" className="h-10 w-10 rounded-lg" />
+            <Image src="/logo.png" alt="Vibe Slides" width={40} height={40} className="rounded-lg" />
             <div>
               <h1 className="text-xl font-semibold">Vibe Slides</h1>
               <p className="text-sm text-muted-foreground">

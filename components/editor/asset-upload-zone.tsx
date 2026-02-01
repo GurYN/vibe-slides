@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
-import { Upload, Loader2, X, Check, AlertCircle } from "lucide-react";
+import { Upload, Loader2, Check, AlertCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -35,9 +35,8 @@ export function AssetUploadZone({
   className,
 }: AssetUploadZoneProps) {
   const [uploadingFiles, setUploadingFiles] = useState<UploadingFile[]>([]);
-  const [isUploading, setIsUploading] = useState(false);
 
-  const uploadFile = async (file: File): Promise<void> => {
+  const uploadFile = useCallback(async (file: File): Promise<void> => {
     const fileId = `${file.name}-${Date.now()}`;
 
     setUploadingFiles((prev) => [
@@ -79,29 +78,23 @@ export function AssetUploadZone({
 
       toast.error(`Failed to upload ${file.name}: ${errorMessage}`);
     }
-  };
+  }, [projectId]);
 
   const onDrop = useCallback(
     async (acceptedFiles: File[]) => {
       if (acceptedFiles.length === 0) return;
 
-      setIsUploading(true);
+      await Promise.all(acceptedFiles.map(uploadFile));
+      onUploadComplete?.();
 
-      try {
-        await Promise.all(acceptedFiles.map(uploadFile));
-        onUploadComplete?.();
-
-        // Clear successful uploads after a delay
-        setTimeout(() => {
-          setUploadingFiles((prev) =>
-            prev.filter((f) => f.status === "error")
-          );
-        }, 2000);
-      } finally {
-        setIsUploading(false);
-      }
+      // Clear successful uploads after a delay
+      setTimeout(() => {
+        setUploadingFiles((prev) =>
+          prev.filter((f) => f.status === "error")
+        );
+      }, 2000);
     },
-    [projectId, onUploadComplete]
+    [uploadFile, onUploadComplete]
   );
 
   const { getRootProps, getInputProps, isDragActive, isDragReject } =

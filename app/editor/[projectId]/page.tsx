@@ -194,8 +194,7 @@ export default function EditorPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [settingsOpen, setSettingsOpen] = useState(false);
 
-  // Refs for mounted state and intervals (vibe-motion pattern)
-  const mountedRef = useRef(true);
+  // Ref for scan interval (vibe-motion pattern)
   const scanIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
   // Callback for manual refresh
