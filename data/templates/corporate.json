@@ -1,0 +1,44 @@
+{
+  "id": "corporate",
+  "name": "Corporate Blue",
+  "category": "business",
+  "previewImage": null,
+  "designSystem": {
+    "colors": {
+      "primary": "#1e40af",
+      "secondary": "#3b82f6",
+      "accent": "#fbbf24",
+      "background": "#ffffff",
+      "text": "#1f2937",
+      "muted": "#9ca3af"
+    },
+    "typography": {
+      "headingFont": "Inter",
+      "bodyFont": "Inter",
+      "sizes": {
+        "title": 44,
+        "heading": 32,
+        "subheading": 24,
+        "body": 18,
+        "caption": 14
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      }
+    },
+    "layout": {
+      "margins": {
+        "top": 40,
+        "right": 40,
+        "bottom": 40,
+        "left": 40
+      },
+      "slideWidth": 1920,
+      "slideHeight": 1080
+    }
+  },
+  "styleReference": "Professional corporate presentations with clean lines and trustworthy blue tones. Best for business reports, quarterly reviews, and formal presentations.",
+  "isBuiltIn": true
+}

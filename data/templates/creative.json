@@ -1,0 +1,44 @@
+{
+  "id": "creative",
+  "name": "Creative",
+  "category": "creative",
+  "previewImage": null,
+  "designSystem": {
+    "colors": {
+      "primary": "#8b5cf6",
+      "secondary": "#ec4899",
+      "accent": "#14b8a6",
+      "background": "#fafaf9",
+      "text": "#292524",
+      "muted": "#78716c"
+    },
+    "typography": {
+      "headingFont": "Poppins",
+      "bodyFont": "Open Sans",
+      "sizes": {
+        "title": 48,
+        "heading": 36,
+        "subheading": 24,
+        "body": 16,
+        "caption": 12
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      }
+    },
+    "layout": {
+      "margins": {
+        "top": 48,
+        "right": 48,
+        "bottom": 48,
+        "left": 48
+      },
+      "slideWidth": 1920,
+      "slideHeight": 1080
+    }
+  },
+  "styleReference": "Bold and expressive design with vibrant gradients and playful typography. Ideal for creative agencies, marketing presentations, and brand showcases.",
+  "isBuiltIn": true
+}

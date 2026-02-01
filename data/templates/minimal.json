@@ -1,0 +1,44 @@
+{
+  "id": "minimal",
+  "name": "Minimal",
+  "category": "minimal",
+  "previewImage": null,
+  "designSystem": {
+    "colors": {
+      "primary": "#18181b",
+      "secondary": "#71717a",
+      "accent": "#dc2626",
+      "background": "#ffffff",
+      "text": "#09090b",
+      "muted": "#a1a1aa"
+    },
+    "typography": {
+      "headingFont": "IBM Plex Sans",
+      "bodyFont": "IBM Plex Sans",
+      "sizes": {
+        "title": 42,
+        "heading": 30,
+        "subheading": 22,
+        "body": 16,
+        "caption": 13
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 600
+      }
+    },
+    "layout": {
+      "margins": {
+        "top": 56,
+        "right": 56,
+        "bottom": 56,
+        "left": 56
+      },
+      "slideWidth": 1920,
+      "slideHeight": 1080
+    }
+  },
+  "styleReference": "Clean, content-focused design with generous whitespace. Perfect for technical presentations, product demos, and thought leadership content.",
+  "isBuiltIn": true
+}

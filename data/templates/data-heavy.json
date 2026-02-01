@@ -1,0 +1,44 @@
+{
+  "id": "data-heavy",
+  "name": "Data Presentation",
+  "category": "data",
+  "previewImage": null,
+  "designSystem": {
+    "colors": {
+      "primary": "#0369a1",
+      "secondary": "#0891b2",
+      "accent": "#f97316",
+      "background": "#f0f9ff",
+      "text": "#0c4a6e",
+      "muted": "#7dd3fc"
+    },
+    "typography": {
+      "headingFont": "Roboto",
+      "bodyFont": "Roboto",
+      "sizes": {
+        "title": 40,
+        "heading": 28,
+        "subheading": 20,
+        "body": 16,
+        "caption": 12
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      }
+    },
+    "layout": {
+      "margins": {
+        "top": 36,
+        "right": 36,
+        "bottom": 36,
+        "left": 36
+      },
+      "slideWidth": 1920,
+      "slideHeight": 1080
+    }
+  },
+  "styleReference": "Data-optimized layout with ample space for charts, tables, and visualizations. Color palette designed for maximum readability of data elements.",
+  "isBuiltIn": true
+}

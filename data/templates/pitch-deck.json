@@ -1,0 +1,44 @@
+{
+  "id": "pitch-deck",
+  "name": "Pitch Deck",
+  "category": "business",
+  "previewImage": null,
+  "designSystem": {
+    "colors": {
+      "primary": "#0f172a",
+      "secondary": "#0ea5e9",
+      "accent": "#22c55e",
+      "background": "#f8fafc",
+      "text": "#0f172a",
+      "muted": "#64748b"
+    },
+    "typography": {
+      "headingFont": "Montserrat",
+      "bodyFont": "Source Sans Pro",
+      "sizes": {
+        "title": 52,
+        "heading": 38,
+        "subheading": 26,
+        "body": 18,
+        "caption": 14
+      },
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "bold": 700
+      }
+    },
+    "layout": {
+      "margins": {
+        "top": 44,
+        "right": 44,
+        "bottom": 44,
+        "left": 44
+      },
+      "slideWidth": 1920,
+      "slideHeight": 1080
+    }
+  },
+  "styleReference": "High-impact startup pitch design with bold headlines and clear call-to-actions. Optimized for investor presentations and funding rounds.",
+  "isBuiltIn": true
+}
