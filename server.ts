@@ -3,7 +3,7 @@ import next from "next";
 import { WebSocketServer, WebSocket } from "ws";
 import type { Duplex } from "stream";
 import { ptyManager } from "./lib/pty/manager";
-import { isValidProjectId, isValidSessionId } from "./lib/pty/security";
+import { isValidProjectId } from "./lib/pty/security";
 
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOSTNAME || "localhost";

@@ -79,6 +79,7 @@ export function SlidePreview({
             <div className="flex-1 min-h-0 p-4 flex items-center justify-center bg-muted/30 overflow-hidden">
               {selectedSlide !== null && slides[selectedSlide] && (
                 <div className="relative aspect-[16/9] max-w-full max-h-full rounded-lg overflow-hidden border shadow-lg bg-white">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={slides[selectedSlide].thumbnailPath}
                     alt={`Slide ${slides[selectedSlide].slideNumber}`}
@@ -107,6 +108,7 @@ export function SlidePreview({
                         : "border-transparent hover:border-muted-foreground/30"
                     }`}
                   >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={slide.thumbnailPath}
                       alt={`Slide ${slide.slideNumber}`}
@@ -151,6 +153,7 @@ export function SlidePreview({
           )}
 
           {/* Image */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={slides[selectedSlide].thumbnailPath}
             alt={`Slide ${slides[selectedSlide].slideNumber}`}

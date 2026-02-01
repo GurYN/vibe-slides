@@ -7,7 +7,6 @@ import {
   getSafeEnvironment,
   sanitizeInput,
   truncateOutputBuffer,
-  MAX_OUTPUT_BUFFER_SIZE,
 } from "./security";
 
 // Find claude executable path

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Palette, Check, Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
@@ -12,14 +11,12 @@ interface TemplatePanelProps {
   templates: Template[];
   selectedTemplateId?: string | null;
   onSelect: (template: Template) => void;
-  isLoading?: boolean;
 }
 
 export function TemplatePanel({
   templates,
   selectedTemplateId,
   onSelect,
-  isLoading,
 }: TemplatePanelProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
